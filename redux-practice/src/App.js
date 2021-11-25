@@ -2,6 +2,7 @@ import "./App.css";
 import Login from "./components/login";
 import Profile from "./components/profile";
 import Logout from "./components/logout";
+import ChangeColor from "./components/colorChange";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Login />
         <Logout />
       </div>
+      <ChangeColor />
     </div>
   );
 }

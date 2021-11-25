@@ -6,13 +6,14 @@ import reportWebVitals from "./reportWebVitals";
 import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 import userReducer from "./features/user";
+import themeReducer from "./features/theme";
 
 // create a store
 const store = configureStore({
   // pass in a collection of reducers
   reducer: {
     user: userReducer,
-    // theme: themeReducer,
+    theme: themeReducer,
   },
 });
 

@@ -13,8 +13,12 @@ export default function Profile() {
     .then((data) => setImage(data.urls.regular));
   //set user variable to the user state with useSelector
   const user = useSelector((state) => state.user.value);
+  const theme = useSelector((state) => state.theme.value);
+
+  console.log(theme);
+
   return (
-    <div className="profile-wrapper">
+    <div className="profile-wrapper" style={{ color: theme }}>
       <div className="img-wrapper">
         <img src={image} alt="profile" />
       </div>
